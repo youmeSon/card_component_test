@@ -170,7 +170,6 @@ p {
 }
 
 /* Progress */
-
 #progress {
   display: flex;
   justify-content: space-between;
@@ -207,7 +206,6 @@ p {
 }
 
 /* Info */
-
 #info {
   background-color: var(--color-dark-black);
   padding: 1rem 2rem 0.1rem 2rem;
@@ -223,7 +221,7 @@ p {
 .info__contact {
   margin: 0;
   margin-top: 1rem;
-  padding-top: 1.5rem;
+  padding-top: 2.5rem;
 }
 
 .info__contact,
@@ -243,6 +241,11 @@ p {
   align-items: center;
   background-color: var(--color-light-black);
   padding: 1.5rem 2rem;
+}
+
+#course.active {
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #course .course__img,
@@ -307,6 +310,16 @@ p {
   color: var(--color-orange);
 }
 
+.course__content {
+  display: none;
+  margin-top: 1em;
+  color: var(--color-white);
+}
+
+.course__content.active {
+  display: block;
+}
+
 /* Gallery */
 
 #gallery {
@@ -321,6 +334,10 @@ p {
 }
 
 .gallery__container {
+  display: none;
+}
+
+.gallery__container.active {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 5rem;
