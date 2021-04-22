@@ -20,22 +20,23 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <!-- Header -->
-    <header id="profile">
-      <i class="fas fa-times profile__cancel"></i>
-      <div class="profile__container">
-        <img
-          class="profile__img"
-          src="/img/profile/profile.jpg"
-          alt="profile image"
-        />
-        <i class="fas fa-check profile__check"></i>
-      </div>
-      <h1 class="name">Joe Williams</h1>
-      <p class="title">STUDENT</p>
-      <p class="id">ID: 360389</p>
-    </header>
-    <!-- Progress -->
+    <div class="container">
+      <!-- Header -->
+      <header id="profile">
+        <i class="fas fa-times profile__cancel"></i>
+        <div class="profile__container">
+          <img
+            class="profile__img"
+            src="/img/profile/profile.jpg"
+            alt="profile image"
+          />
+          <i class="fas fa-check profile__check"></i>
+        </div>
+        <h1 class="name">Joe Williams</h1>
+        <p class="title">STUDENT</p>
+        <p class="id">ID: 360389</p>
+      </header>
+      <!-- Progress -->
       <section id="progress">
         <div class="progress__status">
           <h3 class="progress__result">Complete</h3>
@@ -47,52 +48,87 @@
         </div>
       </section>
       <div class="body__background">
-
-      <!-- Info -->
-      <section id="info">
-        <div class="info__data">
-          <h4 class="info__contact">CONTACT DETAILS</h4>
-          <h4 class="email">Email: joe.williams@example.com</h4>
-          <h4 class="phone">Tel: +447901234567</h4>
-        </div>
-        <div class="info__data">
-          <h4 class="info__about">ABOUT ME</h4>
-          <h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </h4>
-        </div>
-      </section>
-
-      <!-- Course -->
-      <section id="course">
-        <div class="course__title">
-          <i class="fas fa-graduation-cap course__img"></i>
-          <div class="course__detail">
-            <h2 class="course__current">Current Course</h2>
-            <p class="course__subject">A-LEVEL BIOLOGY</p>
+        <!-- Info -->
+        <section id="info">
+          <div class="info__data">
+            <h4 class="info__contact">CONTACT DETAILS</h4>
+            <h4 class="email">Email: joe.williams@example.com</h4>
+            <h4 class="phone">Tel: +447901234567</h4>
           </div>
-          <!-- toggle -->
-          <button class="course__toggle-btn">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-        </div>
-        <h4 class="course__content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </h4>
-      </section>
+          <div class="info__data">
+            <h4 class="info__about">ABOUT ME</h4>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </h4>
+          </div>
+        </section>
 
-      
+        <!-- Course -->
+        <section id="course">
+          <div class="course__title">
+            <i class="fas fa-graduation-cap course__img"></i>
+            <div class="course__detail">
+              <h2 class="course__current">Current Course</h2>
+              <p class="course__subject">A-LEVEL BIOLOGY</p>
+            </div>
+            <!-- toggle -->
+            <button class="course__toggle-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <h4 class="course__content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </h4>
+        </section>
+        <!-- Gallery -->
+        <section id="gallery">
+          <div class="gallery__title">
+            <i class="far fa-images gallery__album"></i>
+            <h3 class="gallery__name">My Photos</h3>
+            <!-- toggle -->
+            <button class="gallery__toggle-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="gallery__container">
+            <div class="gallery__item big-image">
+              <div class="image">
+                <img src="/img/gallery/flower_lady.jpg" alt="flower lady" />
+              </div>
+            </div>
+            <div class="gallery__item wide-image">
+              <div class="image">
+                <img src="/img/gallery/jump.jpg" alt="jump image" />
+              </div>
+            </div>
+            <div class="gallery__item">
+              <div class="image small-image">
+                <img src="/img/gallery/model.jpg" alt="model image" />
+              </div>
+            </div>
+            <div class="gallery__item">
+              <div class="image small-image">
+                <img src="/img/gallery/study.jpg" alt="study image" />
+              </div>
+              <span class="more-btn">
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
