@@ -1,0 +1,50 @@
+:root {
+  /* Color */
+  --color-white: #f6f2f2;
+  --color-light-white: #f6dada;
+  --color-light-black: #363636;
+  --color-dark-black: #2c2c2c;
+  --color-dark-pink: #b9305d;
+  --color-pink: #f87592;
+  --color-line-pink: #e18fab;
+  --color-light-grey: #b6b1b1;
+  --color-dark-grey: #555353;
+  --color-orange: #feb546;
+
+  /* Font size */
+  --font-large: 1.75rem;
+  --font-medium: 1rem;
+  --font-regular: 0.9rem;
+  --font-normal: 0.7rem;
+  --font-small: 0.5em;
+  --font-micro: 0.2em;
+
+  --font-spacing: 0.1rem;
+
+  /* Size */
+  --size-border-radius: 2rem;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 27rem;
+  height: 100vh;
+  margin: auto;
+  margin-top: 1.5rem;
+  position: relative;
+  text-align: center;
+  border-radius: var(--size-border-radius);
+  background-color: var(--color-dark-pink);
+}
