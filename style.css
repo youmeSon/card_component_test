@@ -82,6 +82,15 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.loading img {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 13.7rem;
+  left: 12rem;
+  z-index: 2;
+}
+
 /* Header */
 
 #profile {

@@ -9,10 +9,30 @@ loadItems()
   .then((items) => {
     displayItem(items[0]);
   })
-  .catch((eroor) => console.log("error", error));
+  .catch((error) => console.log("error", error));
 
 function displayItem(item) {
-  console.log(item);
+  document.querySelector(".loading").style.display = "none";
+
+  const name = document.querySelector(".name");
+  const id = document.querySelector(".id");
+  const email = document.querySelector(".email");
+  const phone = document.querySelector(".phone");
+  const course = document.querySelector(".course__subject");
+  const status = document.querySelector(".progress__result");
+
+  let formattedName = item.name
+    .split(" ")
+    .filter((x) => x != "")
+    .map((x) => (x = x[0].toUpperCase() + x.substr(1).toLowerCase()))
+    .join(" ");
+
+  name.innerText = `${formattedName}`;
+  id.innerText = `ID: ${item.id}`;
+  email.innerText = `Email: ${item.email}`;
+  phone.innerText = `Tel: ${item.telephone}`;
+  course.innerText = `${item.course_title}`;
+  status.innerText = `${item.status}`;
 }
 
 // toggle
