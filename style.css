@@ -170,6 +170,7 @@ p {
 }
 
 /* Progress */
+
 #progress {
   display: flex;
   justify-content: space-between;
@@ -203,4 +204,31 @@ p {
   font-weight: 600;
   letter-spacing: var(--font-spacing);
   color: var(--color-light-grey);
+}
+
+/* Info */
+
+#info {
+  background-color: var(--color-dark-black);
+  padding: 1rem 2rem 0.1rem 2rem;
+}
+
+.info__data {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 1.2rem;
+}
+
+.info__contact {
+  margin: 0;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+}
+
+.info__contact,
+.info__about {
+  color: var(--color-light-grey);
+  font-size: var(--font-spacing);
+  font-weight: 600;
 }
