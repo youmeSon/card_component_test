@@ -168,3 +168,39 @@ p {
 .id:hover {
   transform: translateY(3px) scale(1.1);
 }
+
+/* Progress */
+#progress {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 1.2rem 2rem;
+  background-color: var(--color-light-black);
+  border-radius: 1.1rem;
+  transform: translateX(1.4rem);
+  position: absolute;
+  top: 17.5rem;
+}
+
+.progress__result {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 550;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.progress__result:hover {
+  color: var(--color-orange);
+}
+
+.progress__status {
+  padding-right: 1.8rem;
+  border-right: 1px solid var(--color-dark-grey);
+}
+
+.progress__situation {
+  font-size: 0.5rem;
+  font-weight: 600;
+  letter-spacing: var(--font-spacing);
+  color: var(--color-light-grey);
+}
