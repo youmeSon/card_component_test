@@ -38,6 +38,40 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: 400;
+  color: var(--color-light-white);
+}
+
+h2 {
+  font-size: var(--font-medium);
+  color: var(--color-white);
+  font-weight: normal;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: normal;
+  color: var(--color-white);
+}
+
+h4 {
+  font-size: var(--font-normal);
+  color: var(--color-white);
+  margin: 0.3em 0;
+  letter-spacing: var(--font-spacing);
+  font-weight: 550;
+  text-align: left;
+}
+
+p {
+  font-size: var(--font-small);
+  color: var(--color-light-white);
+  margin: 0.25rem 0;
+}
+
 .container {
   width: 27rem;
   height: 100vh;
@@ -46,5 +80,91 @@ body {
   position: relative;
   text-align: center;
   border-radius: var(--size-border-radius);
+}
+
+/* Header */
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  background: center/cover no-repeat url("/img/background.png");
+  border-top-left-radius: var(--size-border-radius);
+  border-top-right-radius: var(--size-border-radius);
+}
+
+.profile__container {
+  width: 8rem;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  position: relative;
+  transition: transform var(--animation-duration) ease-in;
+}
+
+.profile__container:hover {
+  transform: scale(1.1);
+}
+
+.profile__cancel {
+  position: absolute;
+  font-size: 1.3rem;
+  right: 1.5rem;
+  top: 1.5rem;
+  color: var(--color-light-white);
+  opacity: 0.8;
+}
+
+.profile__img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1.5rem;
+  margin-top: 3rem;
+}
+
+.profile__check {
+  position: absolute;
+  background-color: var(--color-white);
+  color: var(--color-pink);
+  font-size: 0.7rem;
+  padding: 0.5em;
+  border-radius: 50%;
+  bottom: 0.8rem;
+  right: 0.8rem;
+}
+
+.name {
+  margin-bottom: 0;
+  color: var(--color-white);
+  transition: transform var(--animation-duration) ease;
+}
+
+.name:hover {
+  color: var(--color-light-white);
+  transform: scale(1.1);
+}
+
+.title {
+  letter-spacing: var(--font-spacing);
+  color: var(--color-white);
+  opacity: 0.8;
+}
+
+.id {
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 1em;
+  width: 6rem;
+  font-weight: 500;
+  letter-spacing: var(--font-spacing);
+  padding: 1.2em 0.2em;
   background-color: var(--color-dark-pink);
+  border-radius: 1.2rem;
+  border: 2px solid var(--color-line-pink);
+  color: var(--color-white);
+  transition: transform var(--animation-duration) ease;
+}
+
+.id:hover {
+  transform: translateY(3px) scale(1.1);
 }
